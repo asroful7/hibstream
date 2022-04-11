@@ -58,7 +58,7 @@ gyroscope; picture-in-picture" allowfullscreen>
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        var vidurl = "https://www.googleapis.com/drive/v3/files/"+video+"?alt=media&key="+apikey;
+        var vidurl = "window.location.href+'?id='+eid;
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
