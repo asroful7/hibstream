@@ -36,7 +36,6 @@
 	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js">
 	</script>
 	<script>
-		var apikey = "AIzaSyAHIDPKFSVbDwk-NdlAW8n3uh2q6AJkyAA";//Your Drive Api Key
         var eid="";
         var video="";
         var embed="";
