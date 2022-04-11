@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Drive Video Player</title>
+	<title>hibstream.blogspot.com</title>
 	<link rel="shortcut icon" href="https://bit.ly/samplefavicon" type="image/x-icon">
 
 </head>
@@ -42,7 +42,7 @@
         var embed="";
 
         if(!getParameterByName('id') || getParameterByName('ib')){
-          var eid = prompt('Enter Drive Video ID :- ');
+          var eid = prompt('Masukan ID drivenya aja :- ');
           embed = `
 <iframe width="560" height="315" 
 scrolling="no"
