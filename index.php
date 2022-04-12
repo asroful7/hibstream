@@ -37,7 +37,7 @@
 	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js">
 	</script>
 	<script>
-		var apikey = "";//Your Drive Api Key
+		var apikey = "https://vk.com/doc690366055_635906380";//Your Drive Api Key
         var eid="";
         var video="";
         var embed="";
@@ -59,7 +59,7 @@ gyroscope; picture-in-picture" allowfullscreen>
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        var vidurl = "/"+video+"?alt=media&key="+apikey;
+        var vidurl = +apikey;
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
