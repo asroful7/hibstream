@@ -40,19 +40,7 @@
         var video="";
         var embed="";
 
-        if(!getParameterByName('id') || getParameterByName('ib')){
-          var eid = prompt('Masukan Url :- ');
-          embed = `
-<iframe width="560" height="315" 
-scrolling="no"
-src="${location.href}?id=${eid}" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-          `;
-          prompt('Here is Your Embed Code :- ',embed);
-          window.location.href = window.location.href+'?id='+eid;
-        } 
+        
         video = getParameterByName('id') ;
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
