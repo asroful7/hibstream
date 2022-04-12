@@ -57,7 +57,7 @@ gyroscope; picture-in-picture" allowfullscreen>
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        var vidurl = prompt;
+        var vidurl = "${eid}"
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
@@ -94,7 +94,7 @@ function getParameterByName(name, url = window.location.href) {
 			"autoHide": true
 		},
 		"htmlOnPauseBlock": {
-			"html": '<button class=\"embed\" onclick=\"getembed()\">stream</button>\n',
+			"html": '<button class=\"embed\" onclick=\"getembed()\">streaming</button>\n',
 			"height": null,
 			"width": null
 		},
