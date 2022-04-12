@@ -108,7 +108,8 @@ function getParameterByName(name, url = window.location.href) {
 		"allowDownload": false,
 		"playButtonShowing": true,
 		"fillToContainer": false,
-		"posterImage": ""
+                 "primaryColor": "#ff3d2d",
+		"posterImage": "https://vk.com/s/v1/doc/CZDIoEVDaRcjKpuscMjp2NNfnP8P3KSeZsZiuADsUKIVSCZzjVQ"
 	},
 	"vastOptions": {
 		"adList": [],
