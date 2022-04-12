@@ -96,7 +96,7 @@ function getParameterByName(name, url = window.location.href) {
 			"autoHide": true
 		},
 		"htmlOnPauseBlock": {
-			"html": '<button class=\"embed\" onclick=\"getembed()\">Em</button>\n',
+			"html": '<button class=\"embed\" onclick=\"getembed()\">Emjs</button>\n',
 			"height": null,
 			"width": null
 		},
