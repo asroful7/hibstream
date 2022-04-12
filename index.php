@@ -57,7 +57,7 @@ gyroscope; picture-in-picture" allowfullscreen>
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        var vidurl = prompt('Here is Your Embed Code :- ',eid);
+        var vidurl = 'eid;
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
