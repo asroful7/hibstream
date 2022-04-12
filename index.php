@@ -41,7 +41,7 @@
         var embed="";
 
         if(!getParameterByName('id') || getParameterByName('ib')){
-          var eid = prompt('Masukan ID drivenya aja :- ');
+          var eid = prompt('Masukan Url :- ');
           embed = `
 <iframe width="560" height="315" 
 scrolling="no"
