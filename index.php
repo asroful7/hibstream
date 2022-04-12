@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Drive Video Player</title>
+	<title>Video Player Khusus VK</title>
 	<link rel="shortcut icon" href="https://bit.ly/samplefavicon" type="image/x-icon">
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
@@ -43,7 +43,7 @@
         var embed="";
 
         if(!getParameterByName('id') || getParameterByName('ib')){
-          var eid = prompt('Enter Drive Video ID :- ');
+          var eid = prompt('Masukan URL :- ');
           embed = `
 <iframe width="560" height="315" 
 scrolling="no"
@@ -52,7 +52,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
           `;
-          prompt('Here is Your Embed Code :- ',embed);
+          prompt('Hore Berhasil  :- ',embed);
           window.location.href = window.location.href+'?id='+eid;
         } 
         video = getParameterByName('id') ;
