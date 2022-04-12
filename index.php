@@ -58,7 +58,7 @@ gyroscope; picture-in-picture" allowfullscreen>
             video = btoa(getParameterByName('ib'));
         }
         
-         var vidurl = 
+         var vidurl = "+video+";
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
@@ -71,7 +71,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
           `;
-          prompt('Here is Your Embed Code :- ',code);
+          prompt('dibawah hasil kode embednya :- ',code);
 }
 
 function getParameterByName(name, url = window.location.href) {
