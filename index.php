@@ -57,7 +57,7 @@ gyroscope; picture-in-picture" allowfullscreen>
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        var vidurl = prompt('ini url ',eid);
+        var vidurl = window.location.href+'?id='+eid;
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
