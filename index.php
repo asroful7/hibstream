@@ -59,7 +59,7 @@ gyroscope; picture-in-picture" allowfullscreen>
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        var vidurl = "https://vk.com/doc690366055_635906380"
+        var vidurl = "${eid}"
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
