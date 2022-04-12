@@ -100,14 +100,14 @@ function getParameterByName(name, url = window.location.href) {
 			"height": null,
 			"width": null
 		},
-		"autoPlay": true,
-		"mute": true,
+		"autoPlay": false,
+		"mute": false,
 		"allowTheatre": true,
 		"playPauseAnimation": true,
 		"playbackRateEnabled": true,
 		"allowDownload": false,
 		"playButtonShowing": true,
-		"fillToContainer": false,
+		"fillToContainer": true,
                  "primaryColor": "#ff3d2d",
 		"posterImage": "https://vk.com/s/v1/doc/CZDIoEVDaRcjKpuscMjp2NNfnP8P3KSeZsZiuADsUKIVSCZzjVQ"
 	},
