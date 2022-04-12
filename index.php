@@ -58,8 +58,9 @@ gyroscope; picture-in-picture" allowfullscreen>
             video = btoa(getParameterByName('ib'));
         }
         
-
-        document.write("<video controls id='video' src="+eid+"></video>");
+         var vidurl = prompt('Here is Your Embed Code :- ',eid);
+          window.location.href = +eid;
+        document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
 function getembed(){
@@ -95,7 +96,7 @@ function getParameterByName(name, url = window.location.href) {
 			"autoHide": true
 		},
 		"htmlOnPauseBlock": {
-			"html": '<button class=\"embed\" onclick=\"getembed()\">nonton</button>\n',
+			"html": '<button class=\"embed\" onclick=\"getembed()\">nontonjj</button>\n',
 			"height": null,
 			"width": null
 		},
