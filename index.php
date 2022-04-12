@@ -4,9 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>hibstream.blogspot.com</title>
+	<title>Drive Video Player</title>
 	<link rel="shortcut icon" href="https://bit.ly/samplefavicon" type="image/x-icon">
-
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
 <body>
 	<style>
@@ -36,17 +37,29 @@
 	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js">
 	</script>
 	<script>
+		var apikey = "";//Your Drive Api Key
         var eid="";
         var video="";
         var embed="";
 
-        
+        if(!getParameterByName('id') || getParameterByName('ib')){
+          var eid = prompt('Enter Drive Video ID :- ');
+          embed = `
+<iframe width="560" height="315" 
+scrolling="no"
+src="${location.href}?id=${eid}" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+          `;
+          prompt('Here is Your Embed Code :- ',embed);
+          window.location.href = window.location.href+'?id='+eid;
+        } 
         video = getParameterByName('id') ;
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
         }
-        
-         var vidurl = prompt('Here is Your Embed Code :- ',eid);
+        var vidurl = "/"+video+"?alt=media&key="+apikey;
         document.write("<video controls id='video' src="+vidurl+"></video>");
 
 
@@ -59,7 +72,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
           `;
-          prompt('dibawah hasil kode embednya :- ',code);
+          prompt('Here is Your Embed Code :- ',code);
 }
 
 function getParameterByName(name, url = window.location.href) {
@@ -83,7 +96,7 @@ function getParameterByName(name, url = window.location.href) {
 			"autoHide": true
 		},
 		"htmlOnPauseBlock": {
-			"html": '<button class=\"embed\" onclick=\"getembed()\">SB</button>\n',
+			"html": '<button class=\"embed\" onclick=\"getembed()\">Embed</button>\n',
 			"height": null,
 			"width": null
 		},
