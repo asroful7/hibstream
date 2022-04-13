@@ -4,10 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Video Player Khusus VK</title>
+	<title>Server Hibstream</title>
 	<link rel="shortcut icon" href="https://bit.ly/samplefavicon" type="image/x-icon">
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
 </head>
 <body>
 	<style>
@@ -43,7 +42,7 @@
         var embed="";
 
         if(!getParameterByName('id') || getParameterByName('ib')){
-          var eid = prompt('Masukan URL :- ');
+          var eid = prompt('SERVER :- ');
           embed = `
 <iframe width="560" height="315" 
 scrolling="no"
