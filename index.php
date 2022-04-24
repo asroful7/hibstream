@@ -104,7 +104,7 @@ function getParameterByName(name, url = window.location.href) {
 		"allowTheatre": true,
 		"playPauseAnimation": true,
 		"playbackRateEnabled": true,
-		"allowDownload": false,
+		"allowDownload": true,
 		"playButtonShowing": true,
 		"fillToContainer": true,
                  "primaryColor": "#ff3d2d",
